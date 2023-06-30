@@ -7,7 +7,18 @@ export interface Props {
 }
 
 const { content } = Astro.props as Props;
-const { title, image, imageDescription, description } = content;
+const {
+    title,
+    image,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    imageDescription,
+    description,
+} = content;
 const date = new Date(content.date);
 ---
 
@@ -15,7 +26,7 @@ const date = new Date(content.date);
     {
         image ? (
             <div class="relative">
-                <h1 class="text-5xl md:text-5xl 2xl:text-6xl mb-[0.2em] font-extrabold text-white absolute z-50 w-full text-center top-7">
+                <h1 class="text-8xl md:text-5xl 2xl:text-6xl mb-[0.2em] font-extrabold text-white absolute z-50 w-full text-center top-7">
                     {title}
                 </h1>
                 <img
@@ -24,7 +35,11 @@ const date = new Date(content.date);
                     alt={imageDescription ?? title}
                 />
             </div>
-        ) : null
+        ) : (
+            <h1 class="my-4 text-4xl md:text-5xl 2xl:text-6xl mb-[0.2em] font-extrabold text-black absolute z-50 w-full text-center top-7">
+                {title}
+            </h1>
+        )
     }
 
     <div class="flex flex-wrap justify-evenly mb-9 mt-2">
@@ -58,5 +73,78 @@ const date = new Date(content.date);
         class="prose md:prose-lg 2xl:prose-xl px-4 mx-auto prose-pre:font-mono"
     >
         <slot />
+    </div>
+
+    <div class="grid gap-4">
+        <div class="flex gap-4">
+            <img
+                onclick="
+                location.href = '/blog/articles/Canada-my-second-article/'
+                "
+                class="w-2/6 aspect-video object-left flex"
+                src={image3}
+                alt={imageDescription ?? title}
+            />
+
+            <!--
+            <a
+                class="w-2/6 aspect-video object-left flex"
+                href="/blog/articles/Canada-my-second-article/"
+            >
+            </a>
+            -->
+
+            <img
+                class="w-2/6 aspect-video object-right flex"
+                src={image4}
+                alt={imageDescription ?? title}
+            />
+
+            <img
+                class="w-2/6 aspect-video object-left flex"
+                src={image5}
+                alt={imageDescription ?? title}
+            />
+        </div>
+
+        <div class="flex gap-4">
+            <img
+                class="w-2/6 aspect-video object-left flex"
+                src={image6}
+                alt={imageDescription ?? title}
+            />
+
+            <img
+                class="w-2/6 aspect-video object-right flex"
+                src={image2}
+                alt={imageDescription ?? title}
+            />
+
+            <img
+                class="w-2/6 aspect-video object-left flex"
+                src={image1}
+                alt={imageDescription ?? title}
+            />
+        </div>
+
+        <div class="flex gap-4">
+            <img
+                class="w-2/6 aspect-video object-left flex"
+                src={image1}
+                alt={imageDescription ?? title}
+            />
+
+            <img
+                class="w-2/6 aspect-video object-right flex"
+                src={image2}
+                alt={imageDescription ?? title}
+            />
+
+            <img
+                class="w-2/6 aspect-video object-left flex"
+                src={image1}
+                alt={imageDescription ?? title}
+            />
+        </div>
     </div>
 </BaseLayout>

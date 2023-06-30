@@ -21,7 +21,7 @@ const date = new Date(content.date);
           alt={imageDescription ?? title}
         />
         <div>
-          <h1 class="text-5xl font-extrabold text-black text-right w-full content-normal px-8">
+          <h1 class="text-8xl font-extrabold text-black text-right w-full content-normal px-8">
             {title}
           </h1>
           <h2 class="text-centre w-full z-50 top-10 px-8">
@@ -59,8 +59,28 @@ const date = new Date(content.date);
     </div>
   </div>
 
-  <div class="gap-y-4">
-    <div class="flex gap-x-4">
+  <div class="grid gap-4">
+    <div class="flex gap-4">
+      <img
+        class="w-2/6 aspect-video object-left flex"
+        src={image}
+        alt={imageDescription ?? title}
+      />
+
+      <img
+        class="w-2/6 aspect-video object-right flex"
+        src={image2}
+        alt={imageDescription ?? title}
+      />
+
+      <img
+        class="w-2/6 aspect-video object-left flex"
+        src={image}
+        alt={imageDescription ?? title}
+      />
+    </div>
+
+    <div class="flex gap-4">
       <img
         class="w-2/6 aspect-video object-left flex"
         src={image}
