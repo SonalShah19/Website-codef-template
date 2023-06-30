@@ -11,6 +11,6 @@ image6: /images/my-third-article/other.JPG
 ---
 
 
-Here are a collection of photos taken over the past few years. 
+Welcome to my photo bank, where visual stories come alive. Dive into a boundless collection of captivating photographs that ignite inspiration and invite you to explore a world of timeless moments frozen in pixels.
 
 
