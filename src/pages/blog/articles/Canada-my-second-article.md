@@ -5,6 +5,7 @@ date: 14 July 2022
 image7: /images/my-second-article/tree.jpeg
 ---
 
+hi
 Welcome to the untamed wilderness of Alaska, a photographer's ultimate dream come true. From rugged mountains and pristine glaciers to breathtaking wildlife and ethereal Northern Lights, Alaska offers an unparalleled canvas for capturing awe-inspiring photographs. In this blog article, we will explore the captivating beauty of Alaska and why it is a must-visit destination for photography enthusiasts.
 
 Natural Wonders:

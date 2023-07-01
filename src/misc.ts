@@ -11,6 +11,12 @@ export interface Frontmatter {
   image5?: string;
   image6?: string;
   image7?: string;
+  image8?: string;
+  image9?: string;
+  image10?: string;
+  image11?: string;
+  image12?: string;
+  image13?: string;
   imageDescription?: string;
   description: string;
   draft?: boolean;
